@@ -1,0 +1,45 @@
+{
+  "name": "datadoghqdemo",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android --active-arch-only",
+    "android-clean": "cd android && ./gradlew clean && cd..",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "build-ios": "react-native run-ios --configuration Release",
+    "build-android": "react-native run-android --variant release",
+    "install-pods": "cd ios && USE_FABRIC=1 RCT_NEW_ARCH_ENABLED=1 pod install && cd .."
+  },
+  "dependencies": {
+    "@datadog/mobile-react-native": "^1.0.0-rc9",
+    "@react-native-masked-view/masked-view": "^0.2.6",
+    "@react-navigation/native": "^6.0.10",
+    "@react-navigation/native-stack": "^6.6.2",
+    "@shopify/flash-list": "^1.2.0",
+    "react": "18.0.0",
+    "react-native": "0.69.1",
+    "react-native-big-list": "^1.5.4",
+    "react-native-fast-image": "^8.5.11",
+    "react-native-gesture-handler": "^2.5.0",
+    "react-native-safe-area-context": "^4.3.1",
+    "react-native-screens": "^3.15.0",
+    "react-native-shimmer-placeholder": "^2.0.8",
+    "rnx-gradient": "^0.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/runtime": "^7.12.5",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "babel-jest": "^26.6.3",
+    "eslint": "^7.32.0",
+    "jest": "^26.6.3",
+    "metro-react-native-babel-preset": "^0.70.3",
+    "react-test-renderer": "18.0.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
